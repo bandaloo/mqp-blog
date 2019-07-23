@@ -46,7 +46,7 @@
       }
     },
     "line_linked": {
-      "enable": true,
+      "enable": false,
       "distance": 100,
       "color": "#bcd",
       "opacity": 0.4,

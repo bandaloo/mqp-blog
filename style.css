@@ -1,0 +1,51 @@
+html {
+  font-size: 14pt;
+  font-family: sans-serif;
+}
+
+body {
+  transition: color .5s, background-color .5s;
+}
+
+body.dark-mode {
+  color: #d2d2d2;
+  background-color: #242424;
+}
+
+body.dark-mode a {
+  color: #0970d9;
+}
+
+body.light-mode {
+  color: #242424;
+  background-color: #e2e2e2;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 43em;
+}
+
+img.blogimage {
+  max-width: 100%;
+}
+
+time.blogdate {
+  color: #8f8f8f;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer a {
+  margin: 0 5%;
+}

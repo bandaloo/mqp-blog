@@ -22,3 +22,8 @@ img.blogimage {
 time.blogdate {
   color: #8f8f8f;
 }
+
+.lightmode {
+  background-color: #d2d2d2;
+  color: #242424;
+}

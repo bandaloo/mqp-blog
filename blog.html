@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US" id="html">
+<html lang="en-US">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Sample Blog Post</title>
@@ -13,12 +13,10 @@
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
     <!-- TODO: create favicon -->
 
-    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <script src="darklight.js"></script>
-
-  <body id="body">
+  <body id="body" class="dark-mode">
     <main>
       <h1>Our Blog</h1>
 
@@ -76,6 +74,17 @@
         eros in cursus turpis massa tincidunt dui.
       </p>
     </main>
+
+    <footer>
+      <a href="/">Index</a>
+
+      <a href="about">About</a>
+
+      <a href="javascript:toggleMode()" id="toggle-mode" 
+        title="Toggle light/dark mode (t)">Light Mode</a>
+    </footer>
+
   </body>
+  <script src="darklight.js"></script>
 </html>
 

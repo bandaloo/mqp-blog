@@ -5,7 +5,9 @@
     <title>Kyoto VR MQP Team Blog</title>
 
     <meta property="og:title" content="Kyoto VR MQP Team Blog" />
-    <meta property="og:description" content="The blog of the Kyoto VR MQP Team." />
+    <meta property="og:description" content="Kyoto is a very old and historic city. It’s a place rich with culture that many people come to experience. But most people who visit these famous or historical sites aren’t fully aware of the rich history surrounding them. With our app for KyotoVR, visitors of famous historical sites in Kyoto can have a whole new, culturally enriching experience that will guide them throughout the site and expose them to historical information they never knew before. AR allows us to add another layer of information over the real world without augmenting the historical sites themselves." />
+    <meta name="description" content="Kyoto is a very old and historic city. It’s a place rich with culture that many people come to experience. But most people who visit these famous or historical sites aren’t fully aware of the rich history surrounding them. With our app for KyotoVR, visitors of famous historical sites in Kyoto can have a whole new, culturally enriching experience that will guide them throughout the site and expose them to historical information they never knew before. AR allows us to add another layer of information over the real world without augmenting the historical sites themselves." />
+    <meta name="author" content="Joseph Petitti" />
     <meta property="og:image"
     content="https://mqp.petitti.org/images/computer-opposum.jpg" />
     <meta property="og:type" content="blog" />
@@ -14,7 +16,7 @@
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
     <!-- TODO: create favicon -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body id="body" class="dark-mode">
@@ -223,23 +225,18 @@
     </main>
 
     <footer>
-      <a href="/">Index</a>
+      <nav>
+        <a href="/">Index</a>
 
-      <a href="about">About</a>
+        <a href="about">About</a>
+      </nav>
 
-      <a href="javascript:toggleMode()" id="toggle-mode" 
-        title="Toggle light/dark mode (t)">Light Mode</a>
+      <button class="button dark-light" id="dark-light-button"
+      title="Toggle light/dark mode (t)" onClick="toggleMode()">Light Mode</button>
     </footer>
 
     <div id="particles-js"></div>
   </body>
-  <script src="particles.min.js"></script>
-  <script>
-    window.onload = () => {
-      particlesJS.load('particles-js', 'https://mqp.petitti.org/particle-cfg.json');
-    }
-  </script>
-  <script src="darklight.js"></script>
   <style>
     div#particles-js {
       position: absolute;
@@ -250,5 +247,12 @@
       z-index: -2;
     }
   </style>
+  <script src="scripts/darklight.js"></script>
+  <script src="scripts/particles.min.js"></script>
+  <script>
+    window.onload = () => {
+      particlesJS.load('particles-js', 'https://mqp.petitti.org/scripts/particle-cfg.json');
+    }
+  </script>
 </html>
 

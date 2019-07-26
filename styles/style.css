@@ -7,13 +7,17 @@ body {
   transition: color .5s, background-color .5s;
 }
 
+body a {
+  transition: color .5s;
+}
+
 body.dark-mode {
   color: #e2e2e2;
   background-color: #242424;
 }
 
 body.dark-mode a {
-  color: #0970d9;
+  color: #1980e9;
 }
 
 body.light-mode {
@@ -35,15 +39,22 @@ img.blogimage {
   max-width: 100%;
 }
 
-time.blogdate {
+time.blogdate, span.author {
   color: #8f8f8f;
 }
 
 footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer nav {
+  display: flex;
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: .25em;
 }
 
 footer a {
@@ -60,32 +71,37 @@ dl div.row {
   flex-wrap: wrap;
 }
 
-.button {
+button {
   border: none;
-  padding: 8px 16px;
+  padding: .5em 1em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: .875em;
   cursor: pointer;
   border-radius: 4px;
-  transition-duration: 0.2s;
+  transition: background-color .5s, color .5s;
+  flex-grow: 0;
 }
 
-.button.dark-mode {
+.dark-mode button{
   color: #242424;
   background-color: #e2e2e2;
 }
 
-.button.light-mode {
+.dark-mode button:hover {
+  background-color: #b2b2b2;
+}
+
+.light-mode button {
   color: #e2e2e2;
   background-color: #242424;
 }
 
-.button.dark-light {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  min-width: 120px;
+.light-mode button:hover {
+  background-color: #545454;
+}
+
+button.dark-light {
+  width: 10em;
 }

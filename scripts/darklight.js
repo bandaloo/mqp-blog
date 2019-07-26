@@ -8,17 +8,11 @@ const toggleMode = () => {
     body.classList.remove('dark-mode');
     body.classList.add('light-mode');
 
-    button.classList.remove('dark-mode');
-    button.classList.add('light-mode');
-
     button.innerHTML = 'Dark Mode';
     mode = 'light';
   } else {
     body.classList.remove('light-mode');
     body.classList.add('dark-mode');
-
-    button.classList.remove('light-mode');
-    button.classList.add('dark-mode');
 
     button.innerHTML = 'Light Mode';
     mode = 'dark';

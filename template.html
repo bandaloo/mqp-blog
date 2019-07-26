@@ -6,23 +6,31 @@
 
     <meta property="og:title" content="Sample Blog Post" />
     <meta property="og:description" content="If you're reading this it means we forgot to change the default description" />
-    <meta property="og:image" content="https://josephpetitti.com/images/turtle-burger.jpg" />
+    <meta name="description" content="If you're reading this it means we forgot to change the default description" />
+    <meta name="author" content="Firstname Lastname" />
+    <meta property="og:image"
+    content="https://mqp.petitti.org/images/computer-opposum.jpg" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://example.com" />
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
     <!-- TODO: create favicon -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body id="body" class="dark-mode">
     <main>
-      <h1>Our Blog</h1>
+      <h1>Kyoto VR MQP Team Blog</h1>
 
       <h2>Sample Blog Post</h2>
 
       <time class='blogdate' datetime="2019-07-22">July 22, 2019</time>
+
+      <br>
+
+      <span class="author">Firstname Lastname</span>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Mauris augue neque
@@ -77,15 +85,17 @@
     </main>
 
     <footer>
-      <a href="/">Index</a>
+      <nav>
+        <a href="/">Index</a>
 
-      <a href="about">About</a>
+        <a href="about">About</a>
+      </nav>
 
-      <button class="button dark-mode dark-light" id="dark-light-button"
+      <button class="button dark-light" id="dark-light-button"
       title="Toggle light/dark mode (t)" onClick="toggleMode()">Light Mode</button>
     </footer>
 
   </body>
-  <script src="darklight.js"></script>
+  <script src="scripts/darklight.js"></script>
 </html>
 

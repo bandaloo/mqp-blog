@@ -21,7 +21,7 @@ body.light-mode {
   background-color: #e2e2e2;
 }
 
-p {
+p, li {
   line-height: 1.5em;
 }
 
@@ -48,4 +48,14 @@ footer {
 
 footer a {
   margin: 0 5%;
+}
+
+dl {
+  max-width: 21em;
+}
+
+dl div.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

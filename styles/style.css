@@ -102,6 +102,7 @@ button {
   background-color: #545454;
 }
 
-button.dark-light {
-  width: 10em;
+button#dark-light-button {
+  margin: 1em;
+  width: 8em;
 }

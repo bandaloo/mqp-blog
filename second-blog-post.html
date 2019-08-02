@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Week 2 (7/29 - 8/2): Week 2: Electric Boogaloo</title>
+
+    <meta property="og:title" content="Week 2 (7/29 - 8/2): Electric Boogaloo" />
+    <meta property="og:description" content="Learning how not to make an augmented reality music experience" />
+    <meta name="description" content="Learning how not to make an augmented reality music experience" />
+    <meta name="author" content="Will Campbell" />
+    <meta property="og:image"
+    content="https://mqp.petitti.org/images/music-note-vid.mp4" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://mqp.petitti.org/second-blog-post" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body id="body" class="dark-mode">
+    <main>
+      <h1>Kyoto VR MQP Team Blog</h1>
+
+      <h2>Week 2 (7/29 - 8/2): Week 2: Electric Boogaloo</h2>
+
+      <time class='blogdate' datetime="2019-07-26">July 26, 2019</time>
+
+      <br>
+
+      <span class="author">Will Campbell</span>
+
+      <p>
+        After exploring Den Den Town with Noma-sensei over the weekend, we 
+        returned to the lab ready to figure out how we would make
+        the application Atticus wanted. First came testing the capabilities 
+        of Vuforia's image recognition when applied to real-world locations. 
+        We achieved limited success, with targets occasionally proving 
+        difficult to locate and track. But we have since read up on 
+        Vuforia's target image criteria and have a better understanding 
+        of what sorts of images will produce better targets. 
+        Further testing in that area awaits us.  
+      </p>
+
+      <p>
+        We also spent a lot of time learning and testing spatialized
+        audio in Unity. In doing so, we created an AR app that, when
+        looking at a 1000 yen note, creates a play and stop button to
+        control a song that plays from the note. Also, moving away 
+        from or closer to the note decreases or increases the volume!
+        (Footage below) The only problem with this is that the volume
+        only changes if you move while looking at the note; moving
+        without the note in sight does not affect the volume at all.
+        Further research into this problem showed that really no one 
+        has figured out that sort of technology yet, making it 
+        impossible for us to implement that feature into the app
+        Atticus wanted.
+      </p>
+
+      <img class="blogimage" src="images/music-note-vid.mp4"
+      alt="Our musical yen note in action">
+
+      <p>
+        Fortunately, after our video meeting with Atticus on Wed 7/31,
+        we pivoted off of the 3D audio experience back to an app
+        focused on tourism, art, and culture; apparently, the 
+        musician Atticus wanted to work with is unavailable right now.
+        Now, our app aims to be a GPS-based AR audio tour guide.
+        Based on your GPS location, certain audio can be played
+        to guide you through the site, and different pieces of art
+        and video can be displayed in augmented reality to enhance the
+        experience. We then spent the rest of the week doing research
+        into these features and how we would implement them, starting 
+        with the GPS location recognition. Throughout next week,
+        we will continue researching GPS-triggered AR events and 
+        real-world target image recognition. 
+      </p>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="/">Index</a>
+
+        <a href="about">About</a>
+      </nav>
+
+      <button id="dark-light-button"
+      title="Toggle light/dark mode (t)" onClick="toggleMode()">Light Mode</button>
+    </footer>
+
+  </body>
+  <script src="scripts/darklight.js"></script>
+</html>
+
